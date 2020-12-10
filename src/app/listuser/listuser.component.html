@@ -1,0 +1,4 @@
+
+<div class="row">
+<app-user *ngFor="let user of list" [u]="user"  (notification)="delete($event)" ></app-user>
+</div>

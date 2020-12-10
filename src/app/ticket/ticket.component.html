@@ -1,0 +1,36 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<table id="contentToConvert" style="border-style:hidden;" width="100%">
+
+<div class="cardWrap">
+    <div class="card cardLeft">
+        <h1>Startup <span>Cinema</span></h1>
+        <div class="title">
+            <h2>{{film.title}}</h2>
+            <span>movie</span>
+        </div>
+        <div class="name">
+            <h2>Vladimir Kudinov</h2>
+            <span>name</span>
+        </div>
+        <div class="time">
+            <h2>{{film.date}}</h2>
+            <span>time</span>
+        </div>
+
+    </div>
+    <div class="card cardRight">
+        <div class="eye"></div>
+        <div class="number">
+            <h3>156</h3>
+            <span>seat</span>
+        </div>
+        <div class="barcode"></div>
+    </div>
+</div>
+</table>
+<button (click)="generatePDF()" class="btn"><i class="fa fa-download"></i> Download</button>
+
+
+
+

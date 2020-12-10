@@ -1,0 +1,34 @@
+
+
+<div class="col" >
+    <div class="row" >
+        <div class="col-8 col-sm-3 col-lg-3" *ngFor="let p  of listProducts" >
+            <div class="card">
+                <img class="card-img-top" src="{{ p.image }}"  alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title"><a href="product.html" title="View film">{{p.title}}</a></h4>
+                    <p class="card-text">{{p.genre}}</p>
+                    <p class="card-text">{{p.price}}</p>
+                    <div class="row">
+                      <!--  <div class="col">
+                            <p class="btn btn-danger btn-block">{{p.price}}</p>
+                        </div>-->
+
+                        <!--<div class="col">
+                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                        </div>-->
+                        <div class="col">
+                            <button class="btn btn-warning" [routerLink]="['/updatefilm/'+ p.id]">Modify</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-warning" [routerLink]="['/Detailfilm/'+ p.id]">Modify</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-danger" (click)="delete(p)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

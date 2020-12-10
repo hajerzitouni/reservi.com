@@ -1,0 +1,58 @@
+
+<div class="col-md-4 col-md-offset-4" id="login">
+    <section id="inner-wrapper" class="login">
+        <article>
+<form #f="ngForm">
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-envelope"> </i></span>
+        <!--<label>email</label>-->
+        <input #n="ngModel"   type="text"   name="usernam" placeholder="Email Address" class="form-control" [(ngModel)]="user.email" required>
+    </div>
+    </div>
+    <div class="alert alert-danger" *ngIf="n.invalid && n.touched">title is required</div>
+
+
+    <div class="form-group">
+        <!--<label> name</label>-->
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-user"> </i></span>
+        <input #un="ngModel" placeholder="Name"  type="text" name="username" class="form-control" [(ngModel)]="user.firstname" required>
+    </div>
+    </div>
+    <div class="alert alert-danger" *ngIf="un.invalid && un.touched">type is required</div>
+
+
+    <div class="form-group">
+       <!-- <label>lastname</label>-->
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-user"> </i></span>
+        <input #e="ngModel" placeholder="last name"  type="text"  class="form-control" [(ngModel)]="user.lastname" required>
+    </div>
+    </div>
+    <div class="alert alert-danger" *ngIf="e.invalid && e.touched">location is required</div>
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-key"> </i></span>
+        <input #e="ngModel" placeholder="Password"   type="text" name="duration" class="form-control" [(ngModel)]="user.password" required>
+    </div>
+    </div>
+    <div class="alert alert-danger" *ngIf="e.invalid && e.touched">duration is required</div>
+
+
+    <div class="form-group">
+
+        <!--<label>age</label>-->
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-birthday-cake"> </i></span>
+        <input #e="ngModel" placeholder="age"  type="number"  class="form-control" [(ngModel)]="user.age" required>
+    </div>
+    </div>
+    <div class="alert alert-danger" *ngIf="e.invalid && e.touched">ptice is required</div>
+
+    <button type="submit" class="btn btn-success btn-block" [disabled]="f.invalid" (click)="add()">save</button>
+</form>
+        </article>
+    </section>
+</div>
+

@@ -1,0 +1,190 @@
+{
+  "films": [
+    {
+      "title": "x-men",
+      "genre": "action",
+      "location": "pathé",
+      "duration": "2.5",
+      "date": "2020-12-19",
+      "price": 18,
+      "id": 5,
+      "image": "'../../assets/images/xman.jpg"
+    },
+    {
+      "title": "she is the man",
+      "genre": "hedyl_tn",
+      "location": "tunis",
+      "id": 2,
+      "image": "'../../assets/images/she.jpg",
+      "date": "2021-01-20",
+      "duration": "2h",
+      "price": 10
+    },
+    {
+      "title": "Spider-Man",
+      "genre": "hedyl_tn",
+      "location": " Ciné Jamil",
+      "id": 8,
+      "image": "'../../assets/images/spi.jpg",
+      "duration": "2h",
+      "date": "2020-12-24",
+      "price": 15
+    },
+    {
+      "title": "clouds",
+      "genre": "drama",
+      "location": "pathé",
+      "duration": "2h",
+      "date": "2020-12-20",
+      "id": 3,
+      "image": "'../../assets/images/clou.jpg"
+    },
+    {
+      "title": "after you",
+      "genre": "romance",
+      "location": "pathé",
+      "duration": "2h",
+      "date": "2020-12-30",
+      "price": 15,
+      "id": 4,
+      "image": "'../../assets/images/me.jpg"
+    },
+    {
+      "title": "Le Roi lion 2",
+      "genre": "Animation/Musical ",
+      "location": " Cinéma Le Colisée",
+      "duration": "1h 22",
+      "date": "2020-12-30",
+      "price": 25,
+      "id": 9,
+      "image": "'../../assets/images/roi.jpg"
+    }
+  ],
+  "reservations": [
+    {
+      "mail": "hajerzitouni@gmail.com",
+      "numcarte": 5265987,
+      "code": 2025,
+      "nbticket": 2,
+      "id": 7
+    },
+    {
+      "mail": "hajerzitouni@gmail.com",
+      "numcarte": 45698753,
+      "code": 20202,
+      "nbticket": 2,
+      "id": 8
+    },
+    {
+      "mail": "hajerzitouni@gmail.com",
+      "numcarte": 45986725,
+      "code": 202,
+      "nbticket": 4,
+      "id": 9
+    },
+    {
+      "mail": "hajerzitouni1@gmail.com",
+      "numcarte": 56987462,
+      "code": 202,
+      "id": 10
+    },
+    {
+      "mail": "hajerzitouni@gmail.com",
+      "numcarte": 1236785,
+      "code": 2525,
+      "id": 11
+    },
+    {
+      "mail": "hajerzitouni@gmail.com",
+      "numcarte": 459852,
+      "code": 2025,
+      "id": 12
+    },
+    {
+      "mail": "h",
+      "numcarte": 5,
+      "code": 2,
+      "nbticket": 0,
+      "id": 22
+    },
+    {
+      "mail": "h",
+      "numcarte": 5,
+      "code": 2,
+      "nbticket": 0,
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "mail": "hajerzitouni@gmail.com",
+      "numcarte": 12345678,
+      "code": 202,
+      "nbticket": 2,
+      "id": 25
+    },
+    {
+      "mail": "hajerzitouni@gmail.com",
+      "numcarte": 12345678,
+      "code": 202,
+      "nbticket": 1,
+      "id": 26
+    },
+    {
+      "mail": "hajerzitouni1@gmail.com",
+      "numcarte": 12369874,
+      "code": 202,
+      "date": 3,
+      "id": 27
+    },
+    {
+      "mail": "hajerzitouni1@gmail.com",
+      "numcarte": 12345786,
+      "code": 306,
+      "date": "2021-01-07",
+      "nbticket": 2,
+      "id": 28
+    },
+    {
+      "mail": "zitouni1@gmail.com",
+      "numcarte": 12345678,
+      "code": 202,
+      "date": "2020-12-06",
+      "nbticket": 2,
+      "id": 29
+    },
+    {
+      "mail": "hajerzitouni1@gmail.com",
+      "numcarte": 12345678,
+      "code": 202,
+      "date": "2020-12-30",
+      "nbticket": 2,
+      "id": 30
+    }
+  ],
+  "users": [
+    {
+      "email": "olivier@gmail.com",
+      "password": "$2a$10$pxkK/qjC1xO/QoSEaluIZOgVig6IaR9n9huj64rfMrbEkXF8XIWB6",
+      "firstname": "Olivier",
+      "lastname": "Monge",
+      "age": 32,
+      "id": 1
+    },
+    {
+      "email": "hajerzitouni@gmail.com",
+      "password": "$2a$10$6twKs6r8E2xw5DuWFl/hJuyCno39NJocdylhaR7uU/ayPjnkEAoiq",
+      "firstname": "hajer",
+      "lastname": "zitouni",
+      "age": 23,
+      "id": 3
+    },
+    {
+      "email": "hajer.zitouni@esprit.tn",
+      "password": "$2a$10$Eo6rW8O8t.JhIKF/h2IUdO0f6t4FfhqtibmutSP.4c1HbGir8MGNi",
+      "firstname": "admin",
+      "id": 4
+    }
+  ]
+}

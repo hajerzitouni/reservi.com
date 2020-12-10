@@ -10,6 +10,7 @@ import {LoginComponent} from './login/login.component';
 import {HomeuserComponent} from './homeuser/homeuser.component';
 import {TicketComponent} from './ticket/ticket.component';
 import {ListuserComponent} from './listuser/listuser.component';
+import {SearchComponent} from './search/search.component';
 
 const routes: Routes = [
     {path: 'home', component:  ListFilmComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
     {path: 'homeuser', component:  HomeuserComponent},
     {path: 'ticket/:id', component: TicketComponent},
     {path: 'list', component: ListuserComponent},
+    {path: 'search', component: SearchComponent },
     {path: '**', component:  LoginComponent},
     ];
 

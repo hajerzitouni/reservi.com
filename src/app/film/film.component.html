@@ -1,0 +1,41 @@
+<p></p>
+
+<form #f="ngForm">
+    <div class="form-group">
+        <label>title</label>
+        <input #n="ngModel" placeholder="ex: Ervin Howell"  type="text" name="title" class="form-control" [(ngModel)]="film.title" required>
+    </div>
+    <div class="alert alert-danger" *ngIf="n.invalid && n.touched">title is required</div>
+
+
+    <div class="form-group">
+        <label> type </label>
+        <input #un="ngModel" placeholder="ex: Bret" type="text" name="username" class="form-control" [(ngModel)]="film.genre" required>
+    </div>
+    <div class="alert alert-danger" *ngIf="un.invalid && un.touched">type is required</div>
+
+
+    <div class="form-group">
+        <label>location</label>
+        <input #e="ngModel" placeholder="ex: tunis"  type="text" name="location" class="form-control" [(ngModel)]="film.location" required>
+    </div>
+    <div class="alert alert-danger" *ngIf="e.invalid && e.touched">>location is required</div>
+    <div class="form-group">
+        <label>duration</label>
+        <input #e="ngModel" placeholder="ex:2h"  type="text" name="duration" class="form-control" [(ngModel)]="film.duration" required>
+    </div>
+    <div class="alert alert-danger" *ngIf="e.invalid && e.touched">duration is required</div>
+
+    <div class="form-group">
+        <label>date</label>
+        <input #e="ngModel" placeholder="ex:2h"  type="date" name="date" class="form-control" [(ngModel)]="film.date" required>
+    </div>
+    <div class="alert alert-danger" *ngIf="e.invalid && e.touched">date is required</div>
+    <div class="form-group">
+        <label>price</label>
+        <input #e="ngModel" placeholder="ex:2h"  type="number" name="price" class="form-control" [(ngModel)]="film.price" required>
+    </div>
+    <div class="alert alert-danger" *ngIf="e.invalid && e.touched">ptice is required</div>
+
+    <button class="btn btn-success" type="button"  [disabled]="f.invalid" (click)="add()">save</button>
+</form>

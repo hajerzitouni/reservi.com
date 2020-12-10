@@ -17,6 +17,8 @@ import { HomeuserComponent } from './homeuser/homeuser.component';
 import { TicketComponent } from './ticket/ticket.component';
 import { ListuserComponent } from './listuser/listuser.component';
 import { UserComponent } from './user/user.component';
+import { SearchComponent } from './search/search.component';
+
 
 
 @NgModule({
@@ -32,7 +34,8 @@ import { UserComponent } from './user/user.component';
     HomeuserComponent,
     TicketComponent,
     ListuserComponent,
-    UserComponent
+    UserComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
