@@ -1,0 +1,72 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8">
+            <div class="panel  panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h5><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</h5>
+                            </div>
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-primary btn-sm btn-block" [routerLink]="['/homeuser']">
+                                    <span class="glyphicon glyphicon-share-alt"></span> Continue shopping
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row" *ngFor="let r of list ">
+                        <div class="col-xs-4">
+                            <h4 class="product-name"><strong>{{r.film}}</strong></h4><h4><small>{{r.mail}}</small></h4>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="col-xs-6 text-right">
+                                <h6><strong> <span class="text-muted">x</span></strong></h6>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control input-sm" value="{{r.nbticket}}">
+                            </div>
+                            <div class="col-xs-2">
+                                <button type="button" class="btn btn-link btn-xs" [routerLink]="['/Detailfilm/'+ r.filmId]">
+
+                                    More detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="text-center">
+                            <div class="col-xs-9">
+                                <h6 class="text-right">Added items?</h6>
+                            </div>
+                            <div class="col-xs-3">
+                                <button type="button" class="btn btn-primary btn-sm" [routerLink]="['/homeuser']">
+                                    Update cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row text-center">
+                        <div class="col-xs-9">
+                        </div>
+                        <div class="col-xs-3">
+                            <button type="button" class="btn btn-danger btn-block" (click)="logout()">
+                                    Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -12,16 +12,34 @@ import {Film} from '../model/film';
 })
 export class ReservationService {
   url = 'http://localhost:3000/reservations';
-
+    urll = 'http://localhost:3000/reservations?userid';
+    body = { filmId : 5} ;
   constructor(private http: HttpClient ) {
   }
 
+  postreservation(reservation: Reservation) {
 
-  postreservation(reservation: Reservation, film: Film ) {
-    return this.http.post<Reservation>(this.url + '/' + film.id, Reservation );
+    return this.http.post<Reservation>(this.url + '/' , reservation );
+
 
   }
 
+    getreservationbyuserid(id): Observable<Reservation>{
+        return this.http.get<Reservation>(this.url + '=' + id).pipe(
+            catchError((err) => {
+                console.error(err);
+                return throwError(err);
+            })
+        );
+    }
+    putFilm(reservation: Reservation): Observable<Reservation>{
+        return this.http.put<Reservation>(this.url + '/' + reservation.id, this.body).pipe(
+            catchError((err) => {
+                console.error(err);
+                return throwError(err);
+            })
+        );
+    }
   post(reservation: Reservation): Observable<Reservation> {
       return this.http.post<Reservation>(this.url, reservation).pipe(
           catchError((err) => {
@@ -38,4 +56,13 @@ export class ReservationService {
           })
       );
   }
+
+    getpanier(id): Observable<Reservation[]>{
+        return this.http.get<Reservation[]>(this.urll + '=' + id).pipe(
+            catchError((err) => {
+                console.error(err);
+                return throwError(err);
+            })
+        );
+    }
 }

@@ -1,15 +1,17 @@
+<div id="search">
+
 <div id="search-component">
-    <h4><label for="search-box">Hero Search</label></h4>
+    <h4> <label for="search-field">SEARCH</label> </h4>
 
-    <input #searchBox id="search-box" (input)="search(searchBox.value)" />
-
+    <input #searchBox id="search-field" (input)="search(searchBox.value)"  value="Enter search here" title="Enter search here" class="blink search-field"/>
+</div>
     <ul class="search-result">
         <li *ngFor="let hero of heroes$ | async" >
-            <!--<a [routerLink]="['/Detailfilm/'+ hero.id]">>
+            <a [routerLink]="['/Detailfilm/'+ hero.id]">
+                {{hero.title}}
+                {{hero.genre}}
+            </a>
 
-            </a>-->
-            {{hero.title}}
-            {{hero.genre}}
         </li>
     </ul>
 </div>

@@ -12,7 +12,7 @@ export class ListuserComponent implements OnInit {
   user: User;
   priceMax: number;
   currentItem = 'Television';
-  constructor(private Service: UserService) { }
+  constructor(private Service: UserService, private Servicee: UserService) { }
 
   ngOnInit(): void {
   this.Service.getUsers().subscribe(
@@ -24,6 +24,11 @@ export class ListuserComponent implements OnInit {
     this.Service.delete(user).subscribe(
         () => this.list = this.list.filter( f => f.id !== user.id)
     );
+  }
+  logout()
+  {
+    this.Servicee.logout();
+   // console.log(this.currentUser);
   }
 
 }

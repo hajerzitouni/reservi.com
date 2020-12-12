@@ -18,6 +18,8 @@ import { TicketComponent } from './ticket/ticket.component';
 import { ListuserComponent } from './listuser/listuser.component';
 import { UserComponent } from './user/user.component';
 import { SearchComponent } from './search/search.component';
+import { ListreservationComponent } from './listreservation/listreservation.component';
+import { PanierComponent } from './panier/panier.component';
 
 
 
@@ -35,7 +37,9 @@ import { SearchComponent } from './search/search.component';
     TicketComponent,
     ListuserComponent,
     UserComponent,
-    SearchComponent
+    SearchComponent,
+    ListreservationComponent,
+    PanierComponent
   ],
   imports: [
     BrowserModule,

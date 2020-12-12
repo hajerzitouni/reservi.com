@@ -4,6 +4,8 @@ import { jsPDF } from 'jspdf';
 import {FilmService} from '../services/film.service';
 import {ActivatedRoute} from '@angular/router';
 import {Film} from '../model/film';
+import {UserService} from '../services/user.service';
+import {User} from '../model/user';
 //import * as jsPDF from 'jspdf';
 @Component({
   selector: 'app-ticket',
@@ -14,7 +16,8 @@ export class TicketComponent implements OnInit {
 @ViewChild('content') content: ElementRef;
 
   film: Film;
-  constructor(private filmService: FilmService, private service: ActivatedRoute) { }
+  currentUser: User;
+  constructor(private filmService: FilmService, private service: ActivatedRoute , private Service: UserService) { }
 
   ngOnInit(): void {
     //this.filmService.getFilmById(id).subscribe( film =>  this.film = film);
@@ -22,6 +25,8 @@ export class TicketComponent implements OnInit {
     const id = this.service.snapshot.paramMap.get('id');
     this.filmService.getFilmById(id).subscribe( film =>  this.film = film);
     console.log(id);
+    this.Service.currentUser.subscribe(x => this.currentUser = x);
+    console.log(this.currentUser);
 
   }
 /*public downloadpdf()

@@ -5,9 +5,11 @@ export class Reservation{
     nbticket: number;
     numcarte: number ;
     code: number;
-    film: number;
+    filmId: number ;
     userid: number;
     mail: string;
     date: Date;
+    film: string;
+
 
 }

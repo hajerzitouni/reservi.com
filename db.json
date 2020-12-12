@@ -1,13 +1,13 @@
 {
   "films": [
     {
+      "id": 5,
       "title": "x-men",
       "genre": "action",
       "location": "pathé",
       "duration": "2.5",
       "date": "2020-12-19",
       "price": 18,
-      "id": 5,
       "image": "'../../assets/images/xman.jpg"
     },
     {
@@ -66,7 +66,8 @@
       "numcarte": 5265987,
       "code": 2025,
       "nbticket": 2,
-      "id": 7
+      "id": 7,
+      "filmId": 5
     },
     {
       "mail": "hajerzitouni@gmail.com",
@@ -99,23 +100,6 @@
       "numcarte": 459852,
       "code": 2025,
       "id": 12
-    },
-    {
-      "mail": "h",
-      "numcarte": 5,
-      "code": 2,
-      "nbticket": 0,
-      "id": 22
-    },
-    {
-      "mail": "h",
-      "numcarte": 5,
-      "code": 2,
-      "nbticket": 0,
-      "id": 23
-    },
-    {
-      "id": 24
     },
     {
       "mail": "hajerzitouni@gmail.com",
@@ -161,6 +145,47 @@
       "date": "2020-12-30",
       "nbticket": 2,
       "id": 30
+    },
+    {
+      "mail": "hajerzitouni@gmail.com",
+      "numcarte": 12345678,
+      "code": 202,
+      "date": "2020-12-17",
+      "nbticket": 2,
+      "id": 34
+    },
+    {
+      "mail": "hajerzitouni@gmail.com",
+      "numcarte": 12345678,
+      "code": 222,
+      "date": "2020-12-17",
+      "nbticket": 2,
+      "userid": 3,
+      "filmId": 3,
+      "film": "clouds",
+      "id": 59
+    },
+    {
+      "mail": "hajerzitouni@gmail.com",
+      "numcarte": 12345678,
+      "code": 202,
+      "date": "2020-12-25",
+      "nbticket": 5,
+      "userid": 3,
+      "filmId": 2,
+      "film": "she is the man",
+      "id": 60
+    },
+    {
+      "mail": "hajerzitouni@gmail.com",
+      "numcarte": 12345678,
+      "code": 202,
+      "date": "2020-12-24",
+      "nbticket": 2,
+      "userid": 3,
+      "filmId": 4,
+      "film": "after you",
+      "id": 61
     }
   ],
   "users": [
@@ -182,9 +207,26 @@
     },
     {
       "email": "hajer.zitouni@esprit.tn",
-      "password": "$2a$10$Eo6rW8O8t.JhIKF/h2IUdO0f6t4FfhqtibmutSP.4c1HbGir8MGNi",
+      "password": "$2a$10$hN8dBJEJE8XM1A0I6/ln4uv9t4xLoIev7.oNX3TeaI.r9aP.Lfo1S",
       "firstname": "admin",
       "id": 4
     }
-  ]
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

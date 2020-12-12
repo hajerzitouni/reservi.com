@@ -1,12 +1,14 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 <body>
 <!-- Shell -->
 <div id="shell">
     <!-- Header -->
     <div id="header">
-        <h1 id="logo"> <p class="font-weight-bold" style="color: #f2a223;">Reservi.Com  </p> </h1>
+        <h1 id="logo" >  <!--<p class="font-weight-bold" style="color: #f2a223;">Reservi.Com  </p>--><a href="#"></a> </h1>
+        {{currentUser.firstname}}
         <div class="social">
             <span>FOLLOW US ON:</span>
             <ul>
@@ -25,8 +27,11 @@
                 <li><a href="#">IN THEATERS</a></li>
                 <li><a href="#">COMING SOON</a></li>
                 <li><a href="#">CONTACT</a></li>
-                <li> <a (click)="logout()"  class="btn btn-danger btn-sm">
-                    <span class="glyphicon glyphicon-log-out"></span>
+                <li> <a [routerLink]="['/panier']">
+                    <i class="fas fa-shopping-cart"></i>
+                </a></li>
+                <li> <a (click)="logout()">
+                    <span class="glyphicon glyphicon-log-out" style="color: red"></span>
                 </a></li>
 
 
@@ -42,14 +47,9 @@
                 <li><a href="#">TOP RATED</a></li>
                 <li><a href="#">MOST COMMENTED</a></li>
             </ul>
-            <div id="search">
-                <form action="home_submit" method="get" accept-charset="utf-8">
-                    <label for="search-field">SEARCH</label>
-                    <input type="text" name="search field" value="Enter search here" id="search-field" title="Enter search here" class="blink search-field"  />
-                    <input type="submit" value="GO!" class="search-button" />
-                </form>
+
+                <app-search></app-search>
             </div>
-        </div>
         <!-- end Sub-Menu -->
 
     </div>
@@ -186,7 +186,7 @@
             <a href="#">ADVERTISE</a> <span>|</span>
             <a href="#">CONTACT </a>
         </p>
-        <p> &copy; 2009 Movie Hunter, LLC. All Rights Reserved.  Designed by <a href="http://chocotemplates.com" target="_blank" title="The Sweetest CSS Templates WorldWide">ChocoTemplates.com</a></p>
+        <p> &copy; 2020 Movie Hunter, LLC. All Rights Reserved.  Designed by <a href="http://chocotemplates.com" target="_blank" title="The Sweetest CSS Templates WorldWide">ChocoTemplates.com</a></p>
     </div>
     <!-- end Footer -->
 </div>

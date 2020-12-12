@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Film} from '../model/film';
 import {FilmService} from '../services/film.service';
+import {UserService} from '../services/user.service';
 
 @Component({
   selector: 'app-film',
@@ -12,7 +13,7 @@ export class FilmComponent implements OnInit {
     film: Film;
     listProducts: Film [];
 
-    constructor(private filmService: FilmService) {
+    constructor(private filmService: FilmService , private Service: UserService) {
     }
 
     ngOnInit(): void {
@@ -36,5 +37,9 @@ export class FilmComponent implements OnInit {
         console.log(this.film);
     }
 
-
+    logout()
+    {
+        this.Service.logout();
+        //console.log(this.currentUser);
+    }
 }

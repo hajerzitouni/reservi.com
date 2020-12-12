@@ -1,3 +1,107 @@
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+<!------ Include the above in your HEAD tag ---------->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.jquery2dotnet.com"> <p class="font-weight-bold" style="color: #f2a223;">Reservi.Com  </p></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li class="active"><a [routerLink]="['/home']" ><span class="glyphicon glyphicon-home"></span>Dashboard</a></li>
+            <li> <a  [routerLink]="['/list']"> <span class="glyphicon glyphicon-user"></span> Users</a> </li>
+            <li class="dropdown"><a [routerLink]="['/booking']" class="dropdown-toggle" data-toggle="dropdown">
+                    <span
+                            class="glyphicon glyphicon-list-alt"></span> Booking list
+            </a>
+                <ul class="dropdown-menu">
+                    <li><a href="http://www.jquery2dotnet.com">Action</a></li>
+                    <li><a href="http://www.jquery2dotnet.com">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                    class="glyphicon glyphicon-search"></span>Search </a>
+                <ul class="dropdown-menu" style="min-width: 300px;">
+                    <li>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form class="navbar-form navbar-left" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search" />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button">
+                                                Go!</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                    class="glyphicon glyphicon-comment"></span>Chats <span class="label label-primary">42</span>
+            </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><span class="label label-warning">7:00 AM</span>Hi :)</a></li>
+                    <li><a href="#"><span class="label label-warning">8:00 AM</span>How are you?</a></li>
+                    <li><a href="#"><span class="label label-warning">9:00 AM</span>What are you doing?</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="text-center">View All</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                    class="glyphicon glyphicon-envelope"></span>Inbox <span class="label label-info">32</span>
+            </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><span class="label label-warning">4:00 AM</span>Favourites Snippet</a></li>
+                    <li><a href="#"><span class="label label-warning">4:30 AM</span>Email marketing</a></li>
+                    <li><a href="#"><span class="label label-warning">5:00 AM</span>Subscriber focused email
+                        design</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="text-center">View All</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" (click)="logout()" ><i class="fas fa-sign-out-alt"></i>Logout </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-cog"></span>Settings</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-off"></span>Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+
+</nav>
+
+<div class="container" style="width: 500px">
+
+    <section class="panel panel-default" style="width: 400px;">
+        <div class="panel-heading">
+            <h2 class="panel-title" style="margin-left: 150px"> <span style="text-align: center"> Add Movie </span></h2>
+        </div>
+        <div class="panel-body">
+
 <form #f="ngForm">
     <div class="form-group">
         <label>title</label>
@@ -37,3 +141,6 @@
 
     <button class="btn btn-success" type="button"  [disabled]="f.invalid" (click)="save()">save</button>
 </form>
+        </div>
+    </section>
+</div>

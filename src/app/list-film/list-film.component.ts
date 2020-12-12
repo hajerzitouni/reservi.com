@@ -34,5 +34,10 @@ export class ListFilmComponent implements OnInit {
         () => this.listProducts = this.listProducts.filter( f => f.id !== film.id)
     );
   }
+  logout()
+  {
+    this.Service.logout();
+    console.log(this.currentUser);
+  }
 
 }

@@ -1,10 +1,38 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<div class="table-responsive">
+    <table class="table no-wrap user-table mb-0">
+        <thead>
+        <tr>
+            <th scope="col" class="border-0 text-uppercase font-medium pl-4">#</th>
+            <th scope="col" class="border-0 text-uppercase font-medium">First name</th>
+            <th scope="col" class="border-0 text-uppercase font-medium">Last name</th>
+            <th scope="col" class="border-0 text-uppercase font-medium">Email</th>
+            <th scope="col" class="border-0 text-uppercase font-medium">Age</th>
+            <th scope="col" class="border-0 text-uppercase font-medium">Manage</th>
+        </tr>
+        </thead>
 
+        <tbody>
+        <tr>
+            <td class="pl-4"></td>
+            <td>
+                <h5 class="font-medium mb-0">{{u.firstname}}</h5>
+            </td>
+            <td>
+                <span class="text-muted">{{u.lastname}}</span><br>
+            </td>
+            <td>
+                <span class="text-muted">{{u.email}}</span><br>
+            </td>
+            <td>
+                <span class="text-muted">{{u.age}}</span><br>
+            </td>
+            <td>
+                <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2" (click)="sendNotif()"><i class="fa fa-trash"></i> </button>
 
-<div class="card-body">
-    <h5 class="card-title">{{u.firstname}}</h5>
-    <p class="card-text">price: {{u.lastname}}</p>
-    <p class="card-text">Quantity: {{u.email}}</p>
-    <button class="btn btn-primary" (click)="sendNotif()"> delete<3</button>
+            </td>
+        </tr>
 
+        </tbody>
+    </table>
 </div>
-

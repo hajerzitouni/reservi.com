@@ -11,6 +11,8 @@ import {HomeuserComponent} from './homeuser/homeuser.component';
 import {TicketComponent} from './ticket/ticket.component';
 import {ListuserComponent} from './listuser/listuser.component';
 import {SearchComponent} from './search/search.component';
+import {ListreservationComponent} from './listreservation/listreservation.component';
+import {PanierComponent} from './panier/panier.component';
 
 const routes: Routes = [
     {path: 'home', component:  ListFilmComponent},
@@ -24,6 +26,8 @@ const routes: Routes = [
     {path: 'ticket/:id', component: TicketComponent},
     {path: 'list', component: ListuserComponent},
     {path: 'search', component: SearchComponent },
+    {path: 'booking', component: ListreservationComponent },
+    {path: 'panier', component: PanierComponent},
     {path: '**', component:  LoginComponent},
     ];
 

@@ -4,69 +4,69 @@
 <!-- Bootstrap -->
 
 <div id="booking"  class="section">
-<div class="section-center">
-    <div class="container">
-        <div class="row">
-            <div class="booking-form">
-<form [formGroup]="contactForm">
-    <div class="row">
-    <div class="col-md-8">
+    <div class="section-center">
+        <div class="container">
+            <div class="row">
+                <div class="booking-form">
+                    <form [formGroup]="contactForm">
+                        <div class="row">
+                            <div class="col-md-8">
 
-    <div class="form-group">
-        <span class="form-label">e-mail</span>
-        <input  placeholder="ex: user@gmail.com"  type="text" name="title" class="form-control" formControlName="email" [(ngModel)]="reservation.mail">
-    </div>
-    </div>
-        </div>
+                                <div class="form-group">
+                                    <span class="form-label">e-mail</span>
+                                    <input  placeholder="ex: user@gmail.com"  type="text" name="title" class="form-control" formControlName="email" [(ngModel)]="reservation.mail">
+                                </div>
+                            </div>
+                        </div>
 
-    <div class="alert alert-danger" *ngIf="email.errors?.required && email.touched">the email is required</div>
-    <div class="alert alert-danger" *ngIf="email.errors?.pattern && email.touched">invalid pattern email</div>
-    <div class="row">
-        <div class="col-md-6">
-    <div class="form-group">
-        <span class="form-label">Card number</span>
-        <input  placeholder="ex:58974563"  type="number" name="price" class="form-control" formControlName="num" [(ngModel)]="reservation.numcarte">
-    </div>
-        </div>
-        <div class="alert alert-danger" *ngIf="num.errors?.required && num.touched">the card number is required</div>
-        <div class="alert alert-danger" *ngIf="num.errors?.pattern && num.touched">the card number is required</div>
+                        <div class="alert alert-danger" *ngIf="email.errors?.required && email.touched">the email is required</div>
+                        <div class="alert alert-danger" *ngIf="email.errors?.pattern && email.touched">invalid pattern email</div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <span class="form-label">Card number</span>
+                                    <input  placeholder="ex:58974563"  type="number" name="price" class="form-control" formControlName="num" [(ngModel)]="reservation.numcarte">
+                                </div>
+                            </div>
+                            <div class="alert alert-danger" *ngIf="num.errors?.required && num.touched">the card number is required</div>
+                            <div class="alert alert-danger" *ngIf="num.errors?.pattern && num.touched">the card number is required</div>
 
-        <div class="col-md-3">
-            <div class="form-group">
-                <span class="form-label">code</span>
-        <input  placeholder="ex:0101"  type="number" name="price" class="form-control" formControlName="cardCode" [(ngModel)]="reservation.code">
-    </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <span class="form-label">code</span>
+                                    <input  placeholder="ex:0101"  type="number" name="price" class="form-control" formControlName="cardCode" [(ngModel)]="reservation.code">
+                                </div>
+                            </div>
+
+                            <div class="alert alert-danger" *ngIf="code.errors?.required && code.touched">the card number is required</div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <span class="form-label">Expiration date</span>
+                                    <input class="form-control" type="date" formControlName="date" [(ngModel)]="reservation.date"/>
+                                </div>
+                            </div>
+                            <div class="alert alert-danger" *ngIf="date.errors?.required && date.touched">Expiration date is required</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <span class="form-label">tickets</span>
+                                    <input  placeholder="ex:2"  type="number" name="price" class="form-control" formControlName="ticket" [(ngModel)]="reservation.nbticket">
+                                </div>
+
+                            </div>
+
+
+                            <div class="alert alert-danger" *ngIf="ticket.errors?.required && ticket.touched">ticket number is required</div>
+                            <div class="col-md-3">
+                                <div class="form-btn">
+                                    <button class="submit-btn"  type="button"  [disabled]="contactForm.invalid"  (click)="add()">save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-
-    <div class="alert alert-danger" *ngIf="code.errors?.required && code.touched">the card number is required</div>
-        <div class="col-md-3">
-            <div class="form-group">
-                <span class="form-label">Expiration date</span>
-                <input class="form-control" type="date" formControlName="date" [(ngModel)]="reservation.date"/>
-            </div>
-        </div>
-        <div class="alert alert-danger" *ngIf="date.errors?.required && date.touched">Expiration date is required</div>
-    </div>
-    <div class="row">
-    <div class="col-md-4">
-        <div class="form-group">
-            <span class="form-label">tickets</span>
-            <input  placeholder="ex:2"  type="number" name="price" class="form-control" formControlName="ticket" [(ngModel)]="reservation.nbticket">
-        </div>
-
-    </div>
-
-
-        <div class="alert alert-danger" *ngIf="ticket.errors?.required && ticket.touched">ticket number is required</div>
-    <div class="col-md-3">
-        <div class="form-btn">
-    <button class="submit-btn"  type="button"  [disabled]="contactForm.invalid"  (click)="add()">save</button>
         </div>
     </div>
-    </div>
-</form>
-            </div>
-        </div>
-    </div>
-</div>
 </div>

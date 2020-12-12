@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
 import {Film} from '../model/film';
 import {FilmService} from '../services/film.service';

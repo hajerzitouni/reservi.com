@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   list: User[];
   currentUser: User;
   u: string;
-
+//user1: User ;
   data: string;
   constructor(private Service: UserService , private route: Router) {
   }
@@ -32,13 +32,27 @@ export class LoginComponent implements OnInit {
     this.Service.currentUser.subscribe(x => this.currentUser = x);
     console.log(this.currentUser);
 
+   // localStorage.setItem('currentUser', JSON.stringify(this.user1));
 
     this.u = JSON.parse(localStorage.getItem('currentUser')).email;
     console.log(this.u);
-    this.data = localStorage.getItem('id');
-    console.log(this.data );
+    /*this.data = localStorage.getItem('id');
+    console.log(this.data );*/
     //this.route.navigate(['/homeuser']);
+    //console.log(this.user1);
+    if (this.currentUser.firstname === 'admin')
+    {
+      this.route.navigate(['/home']);
+    }
+
+    else
+    {
+      this.route.navigate(['/homeuser']);
+    }
+
+    this.Service.searchUser(this.user);
   }
+
 
 
 }
