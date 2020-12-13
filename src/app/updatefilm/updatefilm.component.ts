@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {Film} from '../model/film';
-import {FilmService} from '../services/film.service';
+import {FilmService} from '../shared/film.service';
 import {ActivatedRoute} from '@angular/router';
 import {Router} from '@angular/router';
-import {UserService} from '../services/user.service'; // import router from angular router
+import {UserService} from '../shared/user.service'; // import router from angular router
 @Component({
   selector: 'app-updatefilm',
   templateUrl: './updatefilm.component.html',

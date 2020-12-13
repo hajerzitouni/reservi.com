@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Reservation} from '../model/reservation';
-import {ReservationService} from '../services/reservation.service';
+import {ReservationService} from '../shared/reservation.service';
 import {User} from '../model/user';
-import {UserService} from '../services/user.service';
+import {UserService} from '../shared/user.service';
 import {Router} from '@angular/router';
 
 @Component({

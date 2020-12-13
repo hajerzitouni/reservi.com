@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import {Reservation} from '../model/reservation';
-import {ReservationService} from '../services/reservation.service';
+import {ReservationService} from '../shared/reservation.service';
 import { Validators, FormBuilder, FormGroup,
   FormControl , FormArray } from
       '@angular/forms';
 import {ActivatedRoute, Router} from '@angular/router';
-import {FilmService} from '../services/film.service';
+import {FilmService} from '../shared/film.service';
 import {Film} from '../model/film';
 import {User} from '../model/user';
-import {UserService} from '../services/user.service';
+import {UserService} from '../shared/user.service';
 
 
 @Component({

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {UserService} from '../services/user.service';
-import {ReservationService} from '../services/reservation.service';
+import {UserService} from '../shared/user.service';
+import {ReservationService} from '../shared/reservation.service';
 import {User} from '../model/user';
 import {Reservation} from '../model/reservation';
-import {FilmService} from '../services/film.service';
+import {FilmService} from '../shared/film.service';
 import {Film} from '../model/film';
 
 @Component({

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Film} from '../model/film';
-import {FilmService} from '../services/film.service';
-import {UserService} from '../services/user.service';
+import {FilmService} from '../shared/film.service';
+import {UserService} from '../shared/user.service';
 import {User} from '../model/user';
 import {Router} from '@angular/router';
 

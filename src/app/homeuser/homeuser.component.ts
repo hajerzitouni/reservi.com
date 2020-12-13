@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {Film} from '../model/film';
 import {User} from '../model/user';
-import {FilmService} from '../services/film.service';
-import {UserService} from '../services/user.service';
+import {FilmService} from '../shared/film.service';
+import {UserService} from '../shared/user.service';
 import {Observable, Subject} from 'rxjs';
 import {debounceTime, distinctUntilChanged, switchMap} from 'rxjs/operators';
-import {ReservationService} from '../services/reservation.service';
+import {ReservationService} from '../shared/reservation.service';
 import {Router} from '@angular/router';
 
 @Component({

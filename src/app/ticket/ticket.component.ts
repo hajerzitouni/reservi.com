@@ -1,10 +1,10 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
-import {FilmService} from '../services/film.service';
+import {FilmService} from '../shared/film.service';
 import {ActivatedRoute} from '@angular/router';
 import {Film} from '../model/film';
-import {UserService} from '../services/user.service';
+import {UserService} from '../shared/user.service';
 import {User} from '../model/user';
 //import * as jsPDF from 'jspdf';
 @Component({

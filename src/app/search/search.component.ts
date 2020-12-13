@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
 import {Film} from '../model/film';
-import {FilmService} from '../services/film.service';
+import {FilmService} from '../shared/film.service';
 import {debounceTime, distinctUntilChanged, switchMap} from 'rxjs/operators';
 
 @Component({
