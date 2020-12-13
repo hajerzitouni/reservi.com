@@ -60,6 +60,15 @@ export class UserService {
                         this.currentuser = value;
                         console.log('current user:' + JSON.stringify(this.currentuser));
                         localStorage.setItem('currentUser', JSON.stringify(this.currentuser));
+                        if (this.currentuser.firstname === 'admin')
+                        {
+                            this.route.navigate(['/home']);
+                        }
+
+                        else
+                        {
+                            this.route.navigate(['/homeuser']);
+                        }
                     }
                 });
             }

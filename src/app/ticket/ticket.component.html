@@ -1,10 +1,57 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<table id="contentToConvert" style="border-style:hidden;" width="100%">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+<body>
+<!-- Shell -->
+<div id="shell">
+    <!-- Header -->
+    <div id="header">
+        <h1 id="logo" >  <!--<p class="font-weight-bold" style="color: #f2a223;">Reservi.Com  </p>--><a href="#"></a> </h1>
+        <div class="social">
+            <span>FOLLOW US ON:</span>
+            <ul>
+                <li><a class="twitter" href="#">twitter</a></li>
+                <li><a class="facebook" href="#">facebook</a></li>
+                <li><a class="vimeo" href="#">vimeo</a></li>
+                <li><a class="rss" href="#">rss</a></li>
+            </ul>
+        </div>
+
+        <!-- Navigation -->
+        <div id="navigation">
+            <ul>
+                <li><a class="active" [routerLink]="['/homeuser']">HOME</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">IN THEATERS</a></li>
+                <li><a href="#">COMING SOON</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li> <a [routerLink]="['/panier']">
+                    <i class="fas fa-shopping-cart"></i>
+                </a></li>
+                <li> <a >
+                    <span class="glyphicon glyphicon-log-out" style="color: red"></span>
+                </a></li>
+
+
+            </ul>
+        </div>
+        <!-- end Navigation -->
+
+        <!-- Sub-menu -->
+
+        <!-- end Sub-Menu -->
+
+    </div>
+
+
+<table id="contentToConvert" style="border-style:hidden;" width="150%">
 
 <div class="cardWrap">
     <div class="card cardLeft">
-        <h1>Startup <span>Cinema</span></h1>
+        <h1>{{film.location}} <span>Cinema</span></h1>
         <div class="title">
             <h2>{{film.title}}</h2>
             <span>movie</span>
@@ -14,7 +61,7 @@
             <span>name</span>
         </div>
         <div class="time">
-            <h2>{{film.date}}</h2>
+            <h2 style="color: black">{{film.date}}</h2>
             <span>time</span>
         </div>
 
@@ -31,6 +78,7 @@
 </table>
 <button (click)="generatePDF()" class="btn"><i class="fa fa-download"></i> Download</button>
 
-
+</div>
+</body>
 
 

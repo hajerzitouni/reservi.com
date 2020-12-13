@@ -138,6 +138,7 @@
         <input #p="ngModel" placeholder="ex:15"  type="number" name="price" class="form-control" [(ngModel)]="film.price" required>
     </div>
     <div class="alert alert-danger" *ngIf="p.invalid && p.touched">price is required</div>
+    <div class="form-group">
     <label class="image-upload-container btn btn-bwm">
         <span>Select Image</span>
         <input #imageInput
@@ -145,6 +146,7 @@
                accept="image/*"
                (change)="processFile(imageInput)">
     </label>
+    </div>
 </form>
     <button class="btn btn-success" type="button"  [disabled]="f.invalid" (click)="add()">save</button>
 

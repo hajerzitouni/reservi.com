@@ -5,23 +5,23 @@
       "title": "x-men",
       "genre": "action",
       "location": "pathé",
-      "duration": "2.5",
+      "duration": "2.5 h",
       "date": "2020-12-19",
       "price": 20,
       "image": "'../../assets/images/xman.jpg"
     },
     {
-      "title": "she is the man",
+      "title": "she is the man24",
       "genre": "romance",
       "location": "la colisée",
       "id": 2,
       "image": "'../../assets/images/she.jpg",
       "date": "2021-01-20",
-      "duration": "2",
+      "duration": "2 h",
       "price": 10
     },
     {
-      "title": "Spider-Man",
+      "title": "Spider-Man2",
       "genre": "Science-fiction",
       "location": " Ciné Jamil",
       "id": 8,
@@ -39,16 +39,6 @@
       "id": 3,
       "image": "'../../assets/images/clou.jpg",
       "price": 15
-    },
-    {
-      "title": "after you",
-      "genre": "romance",
-      "location": "pathé",
-      "duration": "2h",
-      "date": "2020-12-30",
-      "price": 15,
-      "id": 4,
-      "image": "'../../assets/images/me.jpg"
     },
     {
       "title": "Le Roi lion 2",
@@ -95,17 +85,6 @@
       "id": 60
     },
     {
-      "email": "hajerzitouni@gmail.com",
-      "numcarte": 12345678,
-      "code": 202,
-      "date": "2020-12-24",
-      "ticket": 2,
-      "userid": 3,
-      "filmId": 4,
-      "film": "after you",
-      "id": 61
-    },
-    {
       "filmId": 5,
       "film": "x-men",
       "email": "hajerzitouni@gmail.com",
@@ -114,16 +93,6 @@
       "cardCode": 202,
       "ticket": 2,
       "id": 62
-    },
-    {
-      "filmId": 4,
-      "film": "after you",
-      "email": "hajerzitouni5@gmail.com",
-      "num": 98765432,
-      "date": "2020-12-25",
-      "cardCode": 202,
-      "ticket": 6,
-      "id": 63
     },
     {
       "userid": 3,
@@ -145,6 +114,105 @@
       "cardCode": 505,
       "ticket": 9,
       "id": 65
+    },
+    {
+      "userid": 3,
+      "filmId": 10,
+      "film": "Wonder Woman",
+      "email": "hajerzitouni@gmail.com",
+      "num": 12345678,
+      "date": "2020-12-03",
+      "cardCode": 202,
+      "ticket": 5,
+      "id": 66
+    },
+    {
+      "userid": 3,
+      "filmId": 10,
+      "film": "Wonder Woman",
+      "email": "hajerzitouni@gmail.com",
+      "num": 12345678,
+      "date": "2020-12-18",
+      "cardCode": 202,
+      "ticket": 5,
+      "id": 67
+    },
+    {
+      "userid": 3,
+      "filmId": 5,
+      "film": "x-men",
+      "email": "hajerzitouni@gmail.com",
+      "num": 12345678,
+      "date": "2020-12-31",
+      "cardCode": 202,
+      "ticket": 2,
+      "id": 68
+    },
+    {
+      "userid": 3,
+      "filmId": 5,
+      "film": "x-men",
+      "email": "hajerzitouni@gmail.com",
+      "num": 12345678,
+      "date": "2020-12-24",
+      "cardCode": 202,
+      "ticket": 2,
+      "id": 69
+    },
+    {
+      "userid": 3,
+      "filmId": 5,
+      "film": "x-men",
+      "email": "hajerzitouni@gmail.com",
+      "num": 12345678,
+      "date": "2020-12-18",
+      "cardCode": 202,
+      "ticket": 6,
+      "id": 70
+    },
+    {
+      "userid": 3,
+      "filmId": 2,
+      "film": "she is the man",
+      "email": "hajerzitouni@gmail.com",
+      "num": 12345678,
+      "date": "2020-12-03",
+      "cardCode": 202,
+      "ticket": 3,
+      "id": 71
+    },
+    {
+      "userid": 3,
+      "filmId": 5,
+      "film": "x-men",
+      "email": "hajerzitouni@gmail.com",
+      "num": 12345678,
+      "date": "2020-12-01",
+      "cardCode": 202,
+      "ticket": 2,
+      "id": 72
+    },
+    {
+      "userid": 3,
+      "filmId": 5,
+      "film": "x-men",
+      "email": "hajerzitouni@gmail.com",
+      "num": 12345678,
+      "date": "2020-12-17",
+      "cardCode": 202,
+      "ticket": 2,
+      "id": 73
+    },
+    {
+      "userid": 3,
+      "filmId": 5,
+      "film": "x-men",
+      "email": "hajerzitouni@gmail.com",
+      "num": 12345678,
+      "date": "2020-12-24",
+      "cardCode": 202,
+      "ticket": 5,
+      "id": 74
     }
   ],
   "users": [
@@ -172,12 +240,68 @@
       "id": 5
     },
     {
-      "email": "youssefamor@gmail.com",
-      "password": "$2a$10$uVCn84g4GoCneEWZAlHzieUrZgfVXAxIXPbVEJ0YQO2FfbXxX72Vq",
+      "email": "youssefamor1@gmail.com",
+      "password": "$2a$10$6wKz752KERXH2B9oGOIhkOOhx0zBu2j6gJrpxJeAsFEZ/aGctPH7.",
       "firstname": "youssef",
-      "lastname": "amor",
+      "lastname": "zitouni",
+      "age": 22,
+      "id": 11
+    },
+    {
+      "email": "hedil@gmail.com",
+      "password": "$2a$10$reLsIPVHmXa0rGAcTp/M6eH6Y1p2pvvTes8YfEfWhNrs2dF7qPJYq",
+      "firstname": "hedil",
+      "lastname": "zitouni",
       "age": 25,
-      "id": 9
+      "id": 14
+    },
+    {
+      "email": "hajer.552@esprit.tn",
+      "password": "$2a$10$.rUo9PyAI4w9qTKWFT8y/uKbYrYltFi/DmnB.LTSPBvnF6mv6PMRi",
+      "firstname": "hajjer",
+      "lastname": "zitouni",
+      "age": 22,
+      "id": 15
+    },
+    {
+      "email": "hajer.555@esprit.tn",
+      "password": "$2a$10$Qf/47uq24dv3rZmU2xbzgOM5BarIXtqfxijAGjwPfyW2VpUbZHWE6",
+      "firstname": "hedyl_tn",
+      "lastname": "zitouni",
+      "age": 22,
+      "id": 16
+    },
+    {
+      "email": "hedil23@gmail.com",
+      "password": "$2a$10$67dlSiIHTtjBBthHSl6V4.vRsCkLvqhRXmg5LqC4lUbMph/OsB4Q2",
+      "firstname": "hedyl_tn",
+      "lastname": "zitouni",
+      "age": 23,
+      "id": 17
+    },
+    {
+      "email": "hajer.5@esprit.com",
+      "password": "$2a$10$S1bST.n3EDN.qT7B7ePI7eLvbTAJvxv9584migofhETwe9T1.CjS6",
+      "firstname": "hedil",
+      "lastname": "zitouni",
+      "age": 25,
+      "id": 18
+    },
+    {
+      "email": "hajer.zitou5ni@esprit.com",
+      "password": "$2a$10$XVTaP8In/Z55f88ECmEM8.K1AMl41hsBLNw/NKwgD9VjBoKX5uA7S",
+      "firstname": "hedil",
+      "lastname": "zitouni",
+      "age": 23,
+      "id": 19
+    },
+    {
+      "email": "hajer.zitouni58@esprit.tn",
+      "password": "$2a$10$libUt/xIk9lNpoCm.2s5XO/OINo8NdZcxRDbWJNdlwJTSXDgoKd9K",
+      "firstname": "hedyl_tn",
+      "lastname": "zitouni",
+      "age": 25,
+      "id": 20
     }
   ]
 }

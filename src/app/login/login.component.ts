@@ -40,17 +40,10 @@ export class LoginComponent implements OnInit {
     console.log(this.data );*/
     //this.route.navigate(['/homeuser']);
     //console.log(this.user1);
-    if (this.currentUser.firstname === 'admin')
-    {
-      this.route.navigate(['/home']);
-    }
-
-    else
-    {
-      this.route.navigate(['/homeuser']);
-    }
-
     this.Service.searchUser(this.user);
+
+
+
   }
 
 
