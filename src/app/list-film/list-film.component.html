@@ -13,7 +13,7 @@
             <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
                 class="icon-bar"></span><span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://www.jquery2dotnet.com"> <p class="font-weight-bold" style="color: #f2a223;">Reservi.Com  </p></a>
+        <a class="navbar-brand" href="http://www.jquery2dotnet.com"> <p class="font-weight-bold" style="color: #f2a223;"><img [alt]="bookName" [src]="bookPictureUrl"></p></a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -34,7 +34,7 @@
                     <li><a href="#">One more separated link</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+            <!--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
                     class="glyphicon glyphicon-search"></span>Search </a>
                 <ul class="dropdown-menu" style="min-width: 300px;">
                     <li>
@@ -42,17 +42,18 @@
                             <div class="col-md-12">
                                 <form class="navbar-form navbar-left" role="search">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search" />
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-primary" type="button">
-                                                Go!</button>
-                                        </span>
+                                        <input type="text" [(ngModel)]="nom" name="nom" class="form-control">
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </li>
                 </ul>
+            </li>-->
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                    class="glyphicon glyphicon-search"></span>Search </a>
+            </li>
+              <li> <input style="width: 80px; margin-top: 11px" type="text" [(ngModel)]="nom" name="nom" class="form-control">
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -98,12 +99,12 @@
 </div>
 <br>
 <div class="col-6 col-sm-2" *ngFor="let p  of listProducts" >
-    <div class="card">
+    <div class="card" *ngIf="p.title == nom || nom==null">
         <img class="card-img-top" src="{{ p.image }}"  alt="Card image cap">
         <div class="card-body">
             <h4 class="card-title"><a href="product.html" title="View film">{{p.title}}</a></h4>
             <p class="card-text">{{p.genre}}</p>
-            <p class="card-text">{{p.price}}</p>
+            <p class="card-text">{{p.price}} DT</p>
             <div class="row">
                 <!--  <div class="col">
                       <p class="btn btn-danger btn-block">{{p.price}}</p>

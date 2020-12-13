@@ -3,6 +3,7 @@ import {Film} from '../model/film';
 import {FilmService} from '../services/film.service';
 import {UserService} from '../services/user.service';
 import {User} from '../model/user';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-list-film',
@@ -14,7 +15,10 @@ export class ListFilmComponent implements OnInit {
   film: Film;
   listProducts: Film [];
   currentUser: User;
-  constructor(private filmService: FilmService , private Service: UserService) {
+  nom: string;
+  bookName = 'logo';
+  bookPictureUrl = '../../assets/images/reservi (3).png';
+  constructor(private filmService: FilmService , private Service: UserService , private route: Router ) {
   }
    /* startSearch() {
         const action = ( film: Film) => {
@@ -38,6 +42,8 @@ export class ListFilmComponent implements OnInit {
   {
     this.Service.logout();
     console.log(this.currentUser);
+    this.route.navigate(['/login']);
+
   }
 
 }

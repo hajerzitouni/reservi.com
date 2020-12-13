@@ -65,4 +65,12 @@ export class ReservationService {
             })
         );
     }
+    getreservationById(id): Observable<Reservation>{
+        return this.http.get<Reservation>(this.url + '/' + id).pipe(
+            catchError((err) => {
+                console.error(err);
+                return throwError(err);
+            })
+        );
+    }
 }

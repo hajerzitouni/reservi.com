@@ -7,22 +7,22 @@
       "location": "pathé",
       "duration": "2.5",
       "date": "2020-12-19",
-      "price": 18,
+      "price": 20,
       "image": "'../../assets/images/xman.jpg"
     },
     {
       "title": "she is the man",
-      "genre": "hedyl_tn",
-      "location": "tunis",
+      "genre": "romance",
+      "location": "la colisée",
       "id": 2,
       "image": "'../../assets/images/she.jpg",
       "date": "2021-01-20",
-      "duration": "2h",
+      "duration": "2",
       "price": 10
     },
     {
       "title": "Spider-Man",
-      "genre": "hedyl_tn",
+      "genre": "Science-fiction",
       "location": " Ciné Jamil",
       "id": 8,
       "image": "'../../assets/images/spi.jpg",
@@ -37,7 +37,8 @@
       "duration": "2h",
       "date": "2020-12-20",
       "id": 3,
-      "image": "'../../assets/images/clou.jpg"
+      "image": "'../../assets/images/clou.jpg",
+      "price": 15
     },
     {
       "title": "after you",
@@ -58,134 +59,92 @@
       "price": 25,
       "id": 9,
       "image": "'../../assets/images/roi.jpg"
+    },
+    {
+      "title": "Wonder Woman",
+      "genre": "Aventure/Action",
+      "location": "pathé",
+      "duration": "2h 31m",
+      "date": "2020-12-31",
+      "price": 25,
+      "image": "data:image/jpeg;base64,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",
+      "id": 10
     }
   ],
   "reservations": [
     {
-      "mail": "hajerzitouni@gmail.com",
-      "numcarte": 5265987,
-      "code": 2025,
-      "nbticket": 2,
-      "id": 7,
-      "filmId": 5
-    },
-    {
-      "mail": "hajerzitouni@gmail.com",
-      "numcarte": 45698753,
-      "code": 20202,
-      "nbticket": 2,
-      "id": 8
-    },
-    {
-      "mail": "hajerzitouni@gmail.com",
-      "numcarte": 45986725,
-      "code": 202,
-      "nbticket": 4,
-      "id": 9
-    },
-    {
-      "mail": "hajerzitouni1@gmail.com",
-      "numcarte": 56987462,
-      "code": 202,
-      "id": 10
-    },
-    {
-      "mail": "hajerzitouni@gmail.com",
-      "numcarte": 1236785,
-      "code": 2525,
-      "id": 11
-    },
-    {
-      "mail": "hajerzitouni@gmail.com",
-      "numcarte": 459852,
-      "code": 2025,
-      "id": 12
-    },
-    {
-      "mail": "hajerzitouni@gmail.com",
-      "numcarte": 12345678,
-      "code": 202,
-      "nbticket": 2,
-      "id": 25
-    },
-    {
-      "mail": "hajerzitouni@gmail.com",
-      "numcarte": 12345678,
-      "code": 202,
-      "nbticket": 1,
-      "id": 26
-    },
-    {
-      "mail": "hajerzitouni1@gmail.com",
-      "numcarte": 12369874,
-      "code": 202,
-      "date": 3,
-      "id": 27
-    },
-    {
-      "mail": "hajerzitouni1@gmail.com",
-      "numcarte": 12345786,
-      "code": 306,
-      "date": "2021-01-07",
-      "nbticket": 2,
-      "id": 28
-    },
-    {
-      "mail": "zitouni1@gmail.com",
-      "numcarte": 12345678,
-      "code": 202,
-      "date": "2020-12-06",
-      "nbticket": 2,
-      "id": 29
-    },
-    {
-      "mail": "hajerzitouni1@gmail.com",
-      "numcarte": 12345678,
-      "code": 202,
-      "date": "2020-12-30",
-      "nbticket": 2,
-      "id": 30
-    },
-    {
-      "mail": "hajerzitouni@gmail.com",
-      "numcarte": 12345678,
-      "code": 202,
-      "date": "2020-12-17",
-      "nbticket": 2,
-      "id": 34
-    },
-    {
-      "mail": "hajerzitouni@gmail.com",
+      "email": "hajerzitouni@gmail.com",
       "numcarte": 12345678,
       "code": 222,
       "date": "2020-12-17",
-      "nbticket": 2,
+      "ticket": 2,
       "userid": 3,
       "filmId": 3,
       "film": "clouds",
       "id": 59
     },
     {
-      "mail": "hajerzitouni@gmail.com",
+      "email": "hajerzitouni@gmail.com",
       "numcarte": 12345678,
       "code": 202,
       "date": "2020-12-25",
-      "nbticket": 5,
+      "ticket": 5,
       "userid": 3,
       "filmId": 2,
       "film": "she is the man",
       "id": 60
     },
     {
-      "mail": "hajerzitouni@gmail.com",
+      "email": "hajerzitouni@gmail.com",
       "numcarte": 12345678,
       "code": 202,
       "date": "2020-12-24",
-      "nbticket": 2,
+      "ticket": 2,
       "userid": 3,
       "filmId": 4,
       "film": "after you",
       "id": 61
+    },
+    {
+      "filmId": 5,
+      "film": "x-men",
+      "email": "hajerzitouni@gmail.com",
+      "num": 12345678,
+      "date": "2020-12-16",
+      "cardCode": 202,
+      "ticket": 2,
+      "id": 62
+    },
+    {
+      "filmId": 4,
+      "film": "after you",
+      "email": "hajerzitouni5@gmail.com",
+      "num": 98765432,
+      "date": "2020-12-25",
+      "cardCode": 202,
+      "ticket": 6,
+      "id": 63
+    },
+    {
+      "userid": 3,
+      "filmId": 9,
+      "film": "Le Roi lion 2",
+      "email": "hajerzitouni@gmail.com",
+      "num": 12345677,
+      "date": "2020-12-18",
+      "cardCode": 9999,
+      "ticket": 2,
+      "id": 64
+    },
+    {
+      "filmId": 10,
+      "film": "Wonder Woman",
+      "email": "youssefamor@gmail.com",
+      "num": 12345612,
+      "date": "2020-12-30",
+      "cardCode": 505,
+      "ticket": 9,
+      "id": 65
     }
   ],
   "users": [
@@ -206,27 +165,19 @@
       "id": 3
     },
     {
-      "email": "hajer.zitouni@esprit.tn",
-      "password": "$2a$10$hN8dBJEJE8XM1A0I6/ln4uv9t4xLoIev7.oNX3TeaI.r9aP.Lfo1S",
+      "email": "hajer.zitouni5@esprit.tn",
+      "password": "$2a$10$IzdLuMX2XM13DSbmkvPeRuHaRk2GZN89D7JeXF9DownNkgnCW.rU6",
       "firstname": "admin",
-      "id": 4
-    }
-  ],
-  "posts": [
+      "lastname": "admin",
+      "id": 5
+    },
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "email": "youssefamor@gmail.com",
+      "password": "$2a$10$uVCn84g4GoCneEWZAlHzieUrZgfVXAxIXPbVEJ0YQO2FfbXxX72Vq",
+      "firstname": "youssef",
+      "lastname": "amor",
+      "age": 25,
+      "id": 9
     }
-  ],
-  "comments": [
-    {
-      "id": 2,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

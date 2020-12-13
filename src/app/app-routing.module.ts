@@ -13,6 +13,7 @@ import {ListuserComponent} from './listuser/listuser.component';
 import {SearchComponent} from './search/search.component';
 import {ListreservationComponent} from './listreservation/listreservation.component';
 import {PanierComponent} from './panier/panier.component';
+import {ShowreservationComponent} from './showreservation/showreservation.component';
 
 const routes: Routes = [
     {path: 'home', component:  ListFilmComponent},
@@ -28,6 +29,7 @@ const routes: Routes = [
     {path: 'search', component: SearchComponent },
     {path: 'booking', component: ListreservationComponent },
     {path: 'panier', component: PanierComponent},
+    {path: 'show/:id', component: ShowreservationComponent},
     {path: '**', component:  LoginComponent},
     ];
 

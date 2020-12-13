@@ -3,6 +3,7 @@ import {Reservation} from '../model/reservation';
 import {ReservationService} from '../services/reservation.service';
 import {User} from '../model/user';
 import {UserService} from '../services/user.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-registration',
@@ -15,7 +16,7 @@ export class RegistrationComponent implements OnInit {
   user: User;
   list: User[];
 
-  constructor(private Service: UserService) {
+  constructor(private Service: UserService, private route: Router) {
   }
 
   ngOnInit(): void {
@@ -28,8 +29,9 @@ export class RegistrationComponent implements OnInit {
       this.Service.postuser(this.user).subscribe(
           user => this.user = user
       );
-      alert('ajouté');
+      alert('your registration is done');
       console.log(this.user);
+      this.route.navigate(['/login']);
   }
 
   /*add() {

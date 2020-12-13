@@ -14,7 +14,7 @@
             <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
                 class="icon-bar"></span><span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://www.jquery2dotnet.com"> <p class="font-weight-bold" style="color: #f2a223;">Reservi.Com  </p></a>
+        <a class="navbar-brand" href="http://www.jquery2dotnet.com"> <p class="font-weight-bold" style="color: #f2a223;"><img [alt]="bookName" [src]="bookPictureUrl"> </p></a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -117,8 +117,8 @@
                                         </div>
                                         <div class="candidate-list-option">
                                             <ul class="list-unstyled">
-                                                <li><i class="fas fa-filter pr-1"></i>{{ r.filmId }}</li>
-                                                <li><i class="fas fa-inbox pr-1"></i> {{r.mail}}</li>
+                                                <li><i class="fas fa-film pr-1"></i>{{ r.film}}</li>
+                                                <li><i class="fas fa-inbox pr-1"></i> {{r.email}}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -127,13 +127,11 @@
                             <td class="candidate-list-favourite-time text-center">
                                 <a class="candidate-list-favourite order-2 text-danger" href="#"><i class="fas fa-ticket-alt"></i></a>
                                 <br>
-                                <span class="candidate-list-time order-1">{{r.nbticket}}</span>
+                                <span class="candidate-list-time order-1">{{r.ticket}}</span>
                             </td>
                             <td>
                                 <ul class="list-unstyled mb-0 d-flex justify-content-end">
-                                    <li><a href="#" class="text-primary" data-toggle="tooltip" title="" data-original-title="view"><i class="far fa-eye"></i></a></li>
-                                    <li><a href="#" class="text-info" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a></li>
-                                    <li><a href="#" class="text-danger" data-toggle="tooltip" title="" data-original-title="Delete"><i class="far fa-trash-alt"></i></a></li>
+                                    <li><a class="text-primary" data-toggle="tooltip" title="" data-original-title="view" [routerLink]="['/show/'+r.id]"><i class="far fa-eye"></i></a></li>
                                 </ul>
                             </td>
                         </tr>

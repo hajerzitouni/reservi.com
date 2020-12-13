@@ -2,12 +2,12 @@ import {Film} from './film';
 
 export class Reservation{
     id: number;
-    nbticket: number;
+    ticket: number;
     numcarte: number ;
     code: number;
     filmId: number ;
     userid: number;
-    mail: string;
+    email: string;
     date: Date;
     film: string;
 

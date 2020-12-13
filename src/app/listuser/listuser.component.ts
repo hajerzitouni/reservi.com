@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {UserService} from '../services/user.service';
 import {User} from '../model/user';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-listuser',
@@ -12,7 +13,9 @@ export class ListuserComponent implements OnInit {
   user: User;
   priceMax: number;
   currentItem = 'Television';
-  constructor(private Service: UserService, private Servicee: UserService) { }
+  bookName = 'logo';
+  bookPictureUrl = '../../assets/images/reservi (3).png';
+  constructor(private Service: UserService, private Servicee: UserService , private route: Router ) { }
 
   ngOnInit(): void {
   this.Service.getUsers().subscribe(
@@ -29,6 +32,7 @@ export class ListuserComponent implements OnInit {
   {
     this.Servicee.logout();
    // console.log(this.currentUser);
+    this.route.navigate(['/login']);
   }
 
 }

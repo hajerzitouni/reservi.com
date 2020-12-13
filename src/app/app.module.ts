@@ -20,6 +20,7 @@ import { UserComponent } from './user/user.component';
 import { SearchComponent } from './search/search.component';
 import { ListreservationComponent } from './listreservation/listreservation.component';
 import { PanierComponent } from './panier/panier.component';
+import { ShowreservationComponent } from './showreservation/showreservation.component';
 
 
 
@@ -39,7 +40,8 @@ import { PanierComponent } from './panier/panier.component';
     UserComponent,
     SearchComponent,
     ListreservationComponent,
-    PanierComponent
+    PanierComponent,
+    ShowreservationComponent
   ],
   imports: [
     BrowserModule,

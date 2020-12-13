@@ -8,7 +8,6 @@
     <!-- Header -->
     <div id="header">
         <h1 id="logo" >  <!--<p class="font-weight-bold" style="color: #f2a223;">Reservi.Com  </p>--><a href="#"></a> </h1>
-        {{currentUser.firstname}}
         <div class="social">
             <span>FOLLOW US ON:</span>
             <ul>
@@ -22,7 +21,7 @@
         <!-- Navigation -->
         <div id="navigation">
             <ul>
-                <li><a class="active" href="#">HOME</a></li>
+                <li><a class="active" [routerLink]="['/homeuser']">HOME</a></li>
                 <li><a href="#">NEWS</a></li>
                 <li><a href="#">IN THEATERS</a></li>
                 <li><a href="#">COMING SOON</a></li>

@@ -18,18 +18,18 @@
         <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-user"></i></span>
         </div>
-        <input #n="ngModel" placeholder="email"  type="text" name="title" class="form-control" [(ngModel)]="user.email" required>
+        <input #n="ngModel" placeholder="email"  type="text" name="title" class="form-control" [(ngModel)]="user.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
     </div>
-    <div class="alert alert-danger" *ngIf="n.invalid && n.touched">title is required</div>
-
+    <div class="alert alert-danger" *ngIf="n.invalid && n.touched">E-mail is required</div>
+    <div class="alert alert-danger" *ngIf="n.errors?.pattern">This is not a valid Email!!! </div>
     <div class=" input-group form-group">
         <!--<label>password</label>-->
         <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-key"></i></span>
         </div>
-        <input #e="ngModel" placeholder="password"  type="text" name="duration "  class="form-control" [(ngModel)]="user.password" required>
+        <input #e="ngModel" placeholder="password"  type="password" name="duration "  class="form-control" [(ngModel)]="user.password" required>
     </div>
-    <div class="alert alert-danger" *ngIf="e.invalid && e.touched">duration is required</div>
+    <div class="alert alert-danger" *ngIf="e.invalid && e.touched">password is required</div>
     <div class="row align-items-center remember">
         <input type="checkbox">Remember Me
     </div>

@@ -6,6 +6,7 @@ import {UserService} from '../services/user.service';
 import {Observable, Subject} from 'rxjs';
 import {debounceTime, distinctUntilChanged, switchMap} from 'rxjs/operators';
 import {ReservationService} from '../services/reservation.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-homeuser',
@@ -20,7 +21,7 @@ export class HomeuserComponent implements OnInit {
   t: string;
   private searchTerms = new Subject<string>();
 
-  constructor(private filmService: FilmService , private Service: UserService , private s: ReservationService ) {
+  constructor(private filmService: FilmService , private Service: UserService , private s: ReservationService , private route: Router) {
   }
   search(term: string): void {
     this.searchTerms.next(term);
@@ -39,6 +40,8 @@ export class HomeuserComponent implements OnInit {
   {
     this.Service.logout();
     console.log(this.currentUser);
+    this.route.navigate(['/login']);
+
   }
   searchby()
   {

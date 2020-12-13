@@ -60,6 +60,7 @@ export class ReserverComponent implements OnInit {
     this.reservation.userid = this.currentUser.id;
     this.reservation.filmId = this.film.id;
     this.reservation.film = this.film.title;
+    Object.assign(this.reservation, this.contactForm.value);
     this.Service.postreservation(this.reservation).subscribe(
         () => this.list = [this.reservation, ...this.list]);
     console.log(this.reservation);

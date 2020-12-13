@@ -14,7 +14,7 @@
 
                                 <div class="form-group">
                                     <span class="form-label">e-mail</span>
-                                    <input  placeholder="ex: user@gmail.com"  type="text" name="title" class="form-control" formControlName="email" [(ngModel)]="reservation.mail">
+                                    <input  placeholder="ex: user@gmail.com"  type="text" name="title" class="form-control" formControlName="email">
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <span class="form-label">Card number</span>
-                                    <input  placeholder="ex:58974563"  type="number" name="price" class="form-control" formControlName="num" [(ngModel)]="reservation.numcarte">
+                                    <input  placeholder="ex:58974563"  type="number" name="price" class="form-control" formControlName="num">
                                 </div>
                             </div>
                             <div class="alert alert-danger" *ngIf="num.errors?.required && num.touched">the card number is required</div>
@@ -34,7 +34,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <span class="form-label">code</span>
-                                    <input  placeholder="ex:0101"  type="number" name="price" class="form-control" formControlName="cardCode" [(ngModel)]="reservation.code">
+                                    <input  placeholder="ex:0101"  type="number" name="price" class="form-control" formControlName="cardCode">
                                 </div>
                             </div>
 
@@ -42,7 +42,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <span class="form-label">Expiration date</span>
-                                    <input class="form-control" type="date" formControlName="date" [(ngModel)]="reservation.date"/>
+                                    <input class="form-control" type="date" formControlName="date"/>
                                 </div>
                             </div>
                             <div class="alert alert-danger" *ngIf="date.errors?.required && date.touched">Expiration date is required</div>
@@ -51,7 +51,7 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <span class="form-label">tickets</span>
-                                    <input  placeholder="ex:2"  type="number" name="price" class="form-control" formControlName="ticket" [(ngModel)]="reservation.nbticket">
+                                    <input  placeholder="ex:2"  type="number" name="price" class="form-control" formControlName="ticket">
                                 </div>
 
                             </div>

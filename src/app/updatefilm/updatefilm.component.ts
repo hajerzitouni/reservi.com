@@ -13,7 +13,8 @@ export class UpdatefilmComponent implements OnInit {
 
   film: Film;
 
-
+  bookName = 'logo';
+  bookPictureUrl = '../../assets/images/reservi (3).png';
 
   constructor(private filmService: FilmService, private service: ActivatedRoute, private route: Router , private Service: UserService) {
   }

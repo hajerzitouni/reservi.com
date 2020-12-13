@@ -13,8 +13,7 @@
             <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
                 class="icon-bar"></span><span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://www.jquery2dotnet.com"> <p class="font-weight-bold" style="color: #f2a223;"><img [alt]="bookName" [src]="bookPictureUrl">
-        </p></a>
+        <a class="navbar-brand" href="http://www.jquery2dotnet.com"> <p class="font-weight-bold" style="color: #f2a223;"><img [alt]="bookName" [src]="bookPictureUrl"> </p></a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -35,7 +34,7 @@
                     <li><a href="#">One more separated link</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+            <!--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
                     class="glyphicon glyphicon-search"></span>Search </a>
                 <ul class="dropdown-menu" style="min-width: 300px;">
                     <li>
@@ -43,17 +42,18 @@
                             <div class="col-md-12">
                                 <form class="navbar-form navbar-left" role="search">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search" />
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-primary" type="button">
-                                                Go!</button>
-                                        </span>
+                                        <input type="text" [(ngModel)]="nom" name="nom" class="form-control">
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </li>
                 </ul>
+            </li>-->
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                    class="glyphicon glyphicon-search"></span>Search </a>
+            </li>
+            <li> <input style="width: 80px; margin-top: 11px" type="text"  name="nom" class="form-control">
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -93,63 +93,15 @@
     <!-- /.navbar-collapse -->
 
 </nav>
-
-<div class="container" style="width: 500px">
-
-    <section class="panel panel-default" style="width: 400px;">
-        <div class="panel-heading">
-            <h2 class="panel-title" style="margin-left: 150px"> <span style="text-align: center" [innerText]="title"> </span></h2>
-        </div>
-        <div class="panel-body">
-
-<form #f="ngForm">
-    <div class="form-group">
-        <label>Title</label>
-        <input #n="ngModel" placeholder="ex: clouds"  type="text" name="title" class="form-control" [(ngModel)]="film.title" required>
+<div class="container" style="position: center">
+    <div class="card" style="width: 40rem; position: center;margin-left: 400px;" >
+    <div class="card-header text-white bg-warning mb-3">  <h3 style="text-align: center">
+        {{reservation.film}} </h3>
     </div>
-    <div class="alert alert-danger" *ngIf="n.invalid && n.touched">title is required</div>
+        <div [ngStyle]="{'background-color':'#D3D3D3'}"><div class="card-body text-white" style="height: 200px">
+        <h5 class="card-title"> Client E-mail : {{reservation.email}}</h5>
+        <h5 class="card-text">  Movie Name :{{reservation.film}} </h5>
+        <h5 class="card-text">  Tickets :{{reservation.ticket}} </h5>
+        </div> </div>
+</div> </div>
 
-
-    <div class="form-group">
-        <label> Category </label>
-        <input #un="ngModel" placeholder="ex: drame" type="text" name="username" class="form-control" [(ngModel)]="film.genre" required>
-    </div>
-    <div class="alert alert-danger" *ngIf="un.invalid && un.touched"> Category is required</div>
-
-
-    <div class="form-group">
-        <label>Cinema</label>
-        <input #e="ngModel" placeholder="ex: Pathé"  type="text" name="location" class="form-control" [(ngModel)]="film.location" required>
-    </div>
-    <div class="alert alert-danger" *ngIf="e.invalid && e.touched">Cinema is required</div>
-    <div class="form-group">
-        <label>Duration</label>
-        <input #d="ngModel" placeholder="ex:2h"  type="text" name="duration" class="form-control" [(ngModel)]="film.duration" required>
-    </div>
-    <div class="alert alert-danger" *ngIf="d.invalid && d.touched">duration is required</div>
-
-    <div class="form-group">
-        <label>Date</label>
-        <input #ii="ngModel" placeholder="ex:12/11/2020"  type="date" name="date" class="form-control" [(ngModel)]="film.date" required>
-    </div>
-    <div class="alert alert-danger" *ngIf="ii.invalid && ii.touched">date is required</div>
-    <div class="form-group">
-        <label>Price</label>
-        <input #p="ngModel" placeholder="ex:15"  type="number" name="price" class="form-control" [(ngModel)]="film.price" required>
-    </div>
-    <div class="alert alert-danger" *ngIf="p.invalid && p.touched">price is required</div>
-    <label class="image-upload-container btn btn-bwm">
-        <span>Select Image</span>
-        <input #imageInput
-               type="file"
-               accept="image/*"
-               (change)="processFile(imageInput)">
-    </label>
-</form>
-    <button class="btn btn-success" type="button"  [disabled]="f.invalid" (click)="add()">save</button>
-
-
-        </div>
-
-    </section>
-</div>
